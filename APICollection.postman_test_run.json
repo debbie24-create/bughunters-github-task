@@ -1,0 +1,292 @@
+{
+	"id": "3dc5798b-35eb-4870-a307-794d0f0905d5",
+	"name": "APICollection",
+	"timestamp": "2023-04-20T21:17:25.121Z",
+	"collection_id": "26899859-1d055471-5da0-471b-872a-19941b0ddf74",
+	"folder_id": 0,
+	"environment_id": "26899859-d412fbf4-1438-46c9-a59f-565280eaaa3b",
+	"totalPass": 21,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2023-04-20T21:17:21.565Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "79febe88-49c4-4928-91a7-f54a30564071",
+			"name": "Get All Todo Entries",
+			"url": "https://demo.fusio-project.org/index.php",
+			"time": 526,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code should be 200": true,
+				"Status code name should have an OK string": true,
+				"Confirm that the apiVersion should be 6.3.8.0": true,
+				"Confirm that the title should be Fusio": true,
+				"Confirm that the payment currency should be EUR": true,
+				"Body matches string": true
+			},
+			"testPassFailCounts": {
+				"Status code should be 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code name should have an OK string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Confirm that the apiVersion should be 6.3.8.0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Confirm that the title should be Fusio": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Confirm that the payment currency should be EUR": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				526
+			],
+			"allTests": [
+				{
+					"Status code should be 200": true,
+					"Status code name should have an OK string": true,
+					"Confirm that the apiVersion should be 6.3.8.0": true,
+					"Confirm that the title should be Fusio": true,
+					"Confirm that the payment currency should be EUR": true,
+					"Body matches string": true
+				}
+			]
+		},
+		{
+			"id": "44f88435-5f7b-4850-a1ac-f2579a7f1eb2",
+			"name": "Get All Entries",
+			"url": "https://demo.fusio-project.org/index.php/",
+			"time": 232,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Body matches string": true,
+				"Status code name should have an OK string": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code name should have an OK string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				232
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Body matches string": true,
+					"Status code name should have an OK string": true
+				}
+			]
+		},
+		{
+			"id": "f75dbf02-65c1-4986-a5b9-e1dc98aa07df",
+			"name": "Get entry per ID - Valid ID",
+			"url": "https://demo.fusio-project.org/index.php",
+			"time": 346,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Status code name should have an OK string": true,
+				"Body matches string": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code name should have an OK string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				346
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Status code name should have an OK string": true,
+					"Body matches string": true
+				}
+			]
+		},
+		{
+			"id": "691df336-8eee-436f-bedb-8f337a09d7ea",
+			"name": "Get entry per ID - Invalid ID(params not using TODO ID)",
+			"url": "https://demo.fusio-project.org/",
+			"time": 339,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Status code name should have an OK string": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code name should have an OK string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				339
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Status code name should have an OK string": true
+				}
+			]
+		},
+		{
+			"id": "5dffc6fe-afab-4b55-b7e7-3892504a3fb8",
+			"name": "Get Books - valid book type",
+			"url": "https://simple-books-api.glitch.me/books",
+			"time": 639,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code  should be 200": true,
+				"Status code name should have an OK string": true,
+				"Response time is more than 200ms": true,
+				"Body matches string": true
+			},
+			"testPassFailCounts": {
+				"Status code  should be 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code name should have an OK string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is more than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				639
+			],
+			"allTests": [
+				{
+					"Status code  should be 200": true,
+					"Status code name should have an OK string": true,
+					"Response time is more than 200ms": true,
+					"Body matches string": true
+				}
+			]
+		},
+		{
+			"id": "4182485d-491d-4b39-aa76-1d5ae59a3d01",
+			"name": "Get Books - invalid book type",
+			"url": "https://simple-books-api.glitch.me/books",
+			"time": 225,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Status code name should have an OK string": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code name should have an OK string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				225
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Status code name should have an OK string": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 2307,
+	"collection": {
+		"requests": [
+			{
+				"id": "79febe88-49c4-4928-91a7-f54a30564071",
+				"method": "GET"
+			},
+			{
+				"id": "44f88435-5f7b-4850-a1ac-f2579a7f1eb2",
+				"method": "GET"
+			},
+			{
+				"id": "f75dbf02-65c1-4986-a5b9-e1dc98aa07df",
+				"method": "GET"
+			},
+			{
+				"id": "691df336-8eee-436f-bedb-8f337a09d7ea",
+				"method": "GET"
+			},
+			{
+				"id": "5dffc6fe-afab-4b55-b7e7-3892504a3fb8",
+				"method": "GET"
+			},
+			{
+				"id": "4182485d-491d-4b39-aa76-1d5ae59a3d01",
+				"method": "GET"
+			}
+		]
+	}
+}
